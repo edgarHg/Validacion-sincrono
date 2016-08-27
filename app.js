@@ -1,12 +1,12 @@
 angular.module('App', ['ngAnimate'])
 	.controller("ctrValidaciones",['$scope', function($scope){
 		$scope.objMensajes = {
-			nombre: false, 
+			nombre: false,
 			apellidoPat: false
 		};
 
 		$scope.mdlUsuario = {
-			nombre: "", 
+			nombre: "",
 			apellidoPat: ""
 		};
 
@@ -25,9 +25,8 @@ angular.module('App', ['ngAnimate'])
 				$scope.objMensajes[input] = false;
 			}
 		};
-    
+
 		function GuardarUsuario(){
 			console.log("Enviando al Servicio para Guardar...");
 		}
 	}])
-
