@@ -4,7 +4,7 @@ angular.module('App', ['ngAnimate'])
 			nombre: false,
 			apellidoPat: false
 		};
-
+		
 		$scope.mdlUsuario = {
 			nombre: "",
 			apellidoPat: ""
