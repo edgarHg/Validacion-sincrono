@@ -1,0 +1,65 @@
+body{
+  font-family: Sans-Serif, Arial;
+    font-size: 16px;
+}
+form{
+  width: 50%;
+  margin: 0 auto;
+}
+.fila{
+  width:100%;
+  margin: 10px 0;
+}
+
+.fila label{
+  display:block;
+  padding:5px 0;
+}
+.fila input{
+  width:100%;
+  height:15px;
+  padding:5px;
+}
+
+.fila span{
+  display:block;
+  width:100%;
+  padding: 6.5px;
+}
+.fila button{
+  margin-top:10px;
+  font-Size:16px;
+  padding:10px;
+}
+
+.errorMensaje{
+    background-color: #DD514C;
+    color: #FFF;
+    font-size: 0.7em;
+}
+
+/* ngIf animation */
+.animationIf.ng-enter,
+.animationIf.ng-leave.ng-leave-active {
+  height: 0px;
+   transition-property: height;
+   transition-duration: 0.1s;
+   transition-timing-function: ease, ease-out;
+   transition-delay: 0.1s;
+
+}
+.animationIf.ng-leave,
+.animationIf.ng-enter.ng-enter-active {
+  height: 14px;
+      transition-property: height;
+      transition-duration: 0.2s;
+      transition-timing-function: linear, linear;
+      transition-delay: 0s;
+}
+
+
+
+
+
+
+

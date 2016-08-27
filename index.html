@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title> Validaciones asincronas con ngModel</title>
+		<link rel="stylesheet" href="estilos.css" />
+		<script src="https://code.angularjs.org/1.5.8/angular.js" type="text/javascript"></script>
+		<script src="https://code.angularjs.org/1.5.8/angular-animate.js" type="text/javascript"></script>
+		<script src="app.js" type="text/javascript"></script>
+	</head>
+	<body ng-app="App">
+		<div ng-controller="ctrValidaciones">
+		    <form>
+			    <div class="fila">
+				    <label for="">Nombre</label>
+				    <input type="text" ng-model="mdlUsuario.nombre" ng-keypress="CerrarMensajes(objMensajes.nombre, 'nombre')"> 
+				    <span ng-if="objMensajes.nombre" class="errorMensaje animationIf">Ingrese el Nombre</span>
+			    </div>
+			    <div class="fila">
+			        <label for="">Apellido Paterno</label>
+			        <input type="text" ng-model="mdlUsuario.apellidoPat" ng-keypress="CerrarMensajes(objMensajes.apellidoPat, 'apellidoPat')">        
+			        <span ng-if="objMensajes.apellidoPat" class="errorMensaje animationIf">Ingrese el Apellido Paterno</span>
+			    </div>
+			    <div class="fila">
+			        <button ng-click="BtnGuardarUsuario()">Guardar</button>
+			    </div>
+		    </form>
+		</div>
+	</body>
+</html>
